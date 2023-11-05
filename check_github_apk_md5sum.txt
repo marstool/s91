@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "wget -O - -q https://raw.githubusercontent.com/marstool/s91/main/app-eaafb.apk |md5sum"
+      wget -O - -q https://raw.githubusercontent.com/marstool/s91/main/app-eaafb.apk |md5sum
+echo "md5sum app-eaafb.apk"
+      md5sum app-eaafb.apk
+
+echo
+echo "wget -O /dev/null https://raw.githubusercontent.com/marstool/s91/main/app-eaafb.apk"
