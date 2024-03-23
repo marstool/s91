@@ -1,4 +1,9 @@
 
+define EOL
+
+
+endef
+
 all:
 
 X: gcX up
@@ -20,3 +25,6 @@ up:
 
 m:
 	vim Makefile
+
+sync: /tmp/30081/app-eaafb.apk
+	$(foreach aa1, xq-app-eaafb.apk app-eaafb.apk /tmp/30081/xq-app-eaafb.apk, cp $^ ${aa1}$(EOL))
